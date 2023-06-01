@@ -36,24 +36,24 @@ public class SalesService {
     }
 
     public int maxMonthSale(int[] sales) {
-        int f = 0;
+        int maxMonth = 0;
         int middle = averageSum(sales);
-        for (int t : sales) {
-            if (t > middle) {
-                f = f + 1;
+        for (int sale : sales) {
+            if (sale > middle) {
+                maxMonth = maxMonth + 1;
             }
         }
-        return f;
+        return maxMonth;
     }
 
     public int minMonthSale(int[] sales) {
-        int f = 0;
+        int minMonth = 0;
         int middle = averageSum(sales);
-        for (int t : sales) {
-            if (t > middle) {
-                f = f + 1;
+        for (int sale : sales) {
+            if (sale > middle) {
+                minMonth = minMonth + 1;
             }
         }
-        return f;
+        return minMonth;
     }
 }
